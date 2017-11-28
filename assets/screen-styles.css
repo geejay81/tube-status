@@ -1,6 +1,6 @@
 .list-group-item,
-.list-group-item:first,
-.list-group-item:last
+.list-group-item:first-child,
+.list-group-item:last-child
 {
     font-weight: bold;
     margin: 2px;
