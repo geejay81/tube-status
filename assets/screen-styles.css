@@ -1,8 +1,11 @@
-.list-group-item {
+.list-group-item,
+.list-group-item:first,
+.list-group-item:last
+{
     font-weight: bold;
     margin: 2px;
     border: 0;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .badge {
