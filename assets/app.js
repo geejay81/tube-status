@@ -6,10 +6,12 @@ $(function() {
           var lines = response;
           for(var i = 0; i < lines.length; i++) {
             var line = lines[i];
-            var disruptions = Number(line['disruptions']).count;
-        
+
             $('#lines').append(
-              '<li class="line list-group-item">' + line['name'] + '<span class="badge">' + disruptions + '</span></li>'
+              '<li class="line list-group-item ' + line['id'] + '">' + 
+              line['name'] + 
+              '<span class="badge">' + line.lineStatuses[0].statusSeverityDescription + '</span>' +
+              '</li>'
             );
           }
         }
