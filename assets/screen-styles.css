@@ -1,6 +1,7 @@
 .list-group-item,
 .list-group-item:first-child,
-.list-group-item:last-child
+.list-group-item:last-child,
+.badge
 {
     font-weight: bold;
     margin: 10px;
