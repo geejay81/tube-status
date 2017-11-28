@@ -1,5 +1,8 @@
 .list-group-item {
     font-weight: bold;
+    margin: 2px;
+    border: 0;
+    border-radius: 4px;
 }
 
 .badge {
