@@ -3,7 +3,7 @@
 .list-group-item:last-child
 {
     font-weight: bold;
-    margin: 2px;
+    margin: 10px;
     border: 0;
     border-radius: 50%;
 }
