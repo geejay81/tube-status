@@ -5,57 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/screen-styles.css">
     
     <title>London Underground Line Statuses</title>
 </head>
-<body>
-    <nav role="navigation" class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+<body data-spy="scroll" data-target=".navbar">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fa fa-subway"></i> Tube Status</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-brand">
-                    <i class="fa fa-subway"></i> Tube Status
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#statuses">Statuses</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#data">Data</a>
+                    </li>
+                </ul>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Line Statuses <span class="sr-only">(current)</span></a></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Data</a></li>
+        </nav>
+    </header>
+
+    <main id="statuses" role="main" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Line Statuses</h2>
+                <ul id="lines" class="list-group">
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <header>
-            <h2>Line Statuses</h2>
-        </header>
-        <section class="col-md-12">
-            <ul id="lines" class="list-group">
-            </ul>
-        </section>
-    </div>
+    </main>
+
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam laudantium tempora eveniet doloribus corrupti minima iste ex culpa delectus nulla eos adipisci commodi, magnam mollitia, et ut sit architecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="data" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Data</h2>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, veniam dolorum. Voluptates rem natus in id optio quas delectus quibusdam debitis ducimus, nam et. Debitis quae nihil pariatur tenetur reprehenderit?</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
-            Source: TfL
         </div>
     </footer>
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script 
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="assets/app.js"></script>
 </body>
 </html>
