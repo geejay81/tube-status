@@ -1,3 +1,7 @@
+body {
+    padding-top: 70px;
+}
+
 .list-group-item,
 .list-group-item:first-child,
 .list-group-item:last-child
